@@ -79,6 +79,9 @@
   #quote {
     margin-left: 120px;
   }
+  .img-circle {
+    padding-top: 18px;
+  }
   #phone {
   display: none !important;
   }
