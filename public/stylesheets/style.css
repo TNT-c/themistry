@@ -1,0 +1,93 @@
+
+
+/*Nav bar*/
+.themistry {
+  color: #512E5F !important;
+}
+.menu-inline > li {
+  display: inline-block !important;
+}
+.navbar {
+  padding: 0 4%;
+}
+
+/*Body*/
+.container-fluid {
+  padding: 0px;
+  /*background-color: #726d6d;*/
+}
+.your-class {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slick-slider {
+    position: relative;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+.slick-slide img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+#index-h1 {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/*about*/
+.about {
+  display: inline-block;
+  width: 40%;
+}
+#parent {
+  display: flex;
+  text-align: center;
+  margin-bottom: 200px;
+}
+#wide {
+  flex: 1;
+}
+#narrow {
+  width: 30%;
+}
+#signature {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em;
+}
+#about-sunny {
+  margin-bottom: 150px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+
+/*contact*/
+.contact-div {
+  text-align: center;
+  margin-top: 11%;
+}
+
+.contactIcons {
+  padding-left: 1em;
+}
+
+/*media queries*/
+@media screen and (min-width: 701px) {
+  #quote {
+    margin-left: 120px;
+  }
+  #phone {
+  display: none !important;
+  }
+  #about-slick {
+    margin-top: -19px;
+  }
+}
+@media screen and (max-width: 400px){
+  .contactIcons {
+    padding-left: .3em;
+  }
+}

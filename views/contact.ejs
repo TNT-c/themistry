@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+
+    <% include partials/header.ejs %>
+  </head>
+  <body>
+
+    <div id=#wrapper>
+      <div class="container-fluid">
+        <% include partials/nav.ejs %>
+        <div>
+          <div class="container-fluid">
+            <div class="contact-div">
+              <a href="https://www.instagram.com/sunnymistryphotography/" title="Instagram" target="_blank"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a>
+              <a href="mailto:sunnymistry52@gmail.com" title="email" target="_blank"><i class="fa fa-envelope fa-4x contactIcons" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com/TheMistryPhotographer" title="facebook" target="_blank"><i class="fa fa-facebook fa-5x contactIcons" aria-hidden="true"></i></a>
+              <a id="phone" href="tel:8602808056" title="call"><i class="fa fa-phone-square fa-4x contactIcons" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <% include partials/footer.ejs %>
+  </body>
+</html>

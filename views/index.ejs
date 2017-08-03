@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <% include partials/header.ejs %>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container-fluid">
+        <% include partials/nav.ejs %>
+
+        <div class="your-class" id="about-slick">
+          <div><img src="/images/img (1).jpg"/></div>
+          <div><img src="/images/img (2).jpg"/></div>
+          <div><img src="/images/img (3).jpg"/></div>
+        </div>
+
+        <div>
+          <h1 id="index-h1">Mistry Photography</h1>
+        </div>
+        <% include partials/footer.ejs %>
+      </div> <!-- end container-fluid -->
+    </div> <!-- end wrapper id-->
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.your-class').slick({
+          arrows: false,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 6000,
+            fade: true
+        });
+      });
+    </script>
+  </body>
+</html>

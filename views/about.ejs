@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <% include partials/header.ejs %>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container-fluid">
+        <% include partials/nav.ejs %>
+        <!-- <div id="parent">
+          <div id="narrow">
+            <h2>About me</h2>
+            <blockquote class="blockquote">
+              <p>Hi I'm Sunny!</p>
+              <p>I dedicate my every effort striving to capture the perfect moments.</p>
+              <p>I look forward working together with you and presenting you at your best.</p>
+              <p id="signature">Sunny</p>
+            </blockquote>
+          </div>
+          <div id="wide">
+            <img class="img-circle" src="/images/sunny2.jpg">
+          </div>
+        </div> -->
+        <div class="container" id="about-sunny">
+          <div class="row">
+            <div class="col-md-4" id="quote">
+                <h2>About me</h2>
+                <blockquote class="blockquote">
+                  <p>Hi I'm Sunny!</p>
+                  <p>I dedicate my every effort striving to capture the perfect moments.</p>
+                  <p>I look forward working together with you and presenting you at your best.</p>
+                  <p id="signature">Sunny</p>
+                </blockquote>
+            </div>
+            <div class="col-md-6">
+                <img class="img-circle" src="/images/sunny2.jpg">
+            </div>
+          </div> <!--end row -->
+        </div>
+        <!--slick slider  -->
+        <div class="your-class">
+          <div><img src="/images/img (1).jpg"/></div>
+          <div><img src="/images/img (2).jpg"/></div>
+          <div><img src="/images/img (3).jpg"/></div>
+        </div>
+
+        <% include partials/footer.ejs %>
+      </div> <!-- end container-fluid -->
+    </div> <!-- end wrapper id-->
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.your-class').slick({
+          arrows: false,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 6000
+        });
+      });
+    </script>
+  </body>
+</html>
